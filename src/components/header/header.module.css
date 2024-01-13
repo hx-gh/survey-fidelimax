@@ -1,0 +1,15 @@
+.header_container {
+	background-color: var(--lg-gray-8);
+}
+.header_user_placeholder_container {
+	color: var(--lg-gray-2);
+}
+.header_user_icon_container {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: var(--lg-gray-1);
+}
+.header_breadcrumb_container{
+	color: var(--lg-gray-4);
+}
