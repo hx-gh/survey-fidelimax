@@ -34,7 +34,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 2rem 0;
+	padding: 2rem 1rem;
 }
 .modal_footer_holder {
 	display: flex;

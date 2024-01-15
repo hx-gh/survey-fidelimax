@@ -10,14 +10,24 @@ import { useSurveyContext } from '@/contexts/Survey/survey.context';
 import DropdownActionButton from '../Dropdown';
 import { sendError, sendFakePost, sendSuccess } from '@/utils/api';
 import { useModalContext } from '@/contexts/Modal/modal.context';
+import validateJson from '@/utils/survey/validateJson';
 
 export default function SurveyBody({ SurveyJson }) {
 	const { openModal, closeModal } = useModalContext();
 	const { surveyState } = useSurveyContext();
 	async function HandleFakePost() {
-		sendFakePost(surveyState).then((res) => {
-			console.log(res);
-		});
+		let jsonStatus = validateJson(surveyState);
+		if (jsonStatus === true) {
+			sendFakePost(surveyState).then((res) => {
+				console.log(res);
+			});
+		}
+		if (jsonStatus === false) {
+			openModal({
+				title: 'Erro',
+				displayItem: `O formulário contém erros, valide e corrija as informações necessárias`,
+			});
+		}
 	}
 	async function HandleError() {
 		sendError().then((res) => {
