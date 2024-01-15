@@ -28,7 +28,7 @@ This project was made using the follow technologies:
 
 # :computer: Live version
 
-#```bash
+```bash
 https://survey-fidelimax.vercel.app/survey
 ```
 
