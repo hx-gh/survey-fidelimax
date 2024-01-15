@@ -26,6 +26,12 @@ This project was made using the follow technologies:
 -   Parse the answer and sends to back-end
 -   Action Button with "Enviar Fake Post" "Enviar Erro" "Enviar Sucesso" "Trigger Console Log"
 
+# :computer: Live version
+
+#```bash
+https://survey-fidelimax.vercel.app/survey
+```
+
 # :construction_worker: How to run
 
 ```bash
@@ -33,7 +39,7 @@ This project was made using the follow technologies:
 $ git clone https://github.com/hx-gh/survey-fidelimax.git
 ```
 
-### 💻 Run Add-In
+### 💻 Run Application
 
 ```bash
 # Go to web folder
